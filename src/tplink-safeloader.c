@@ -1529,8 +1529,8 @@ static struct device_info boards[] = {
 			{"device-config", 0x210000, 0x10000},
 			{"group-info", 0x220000, 0x10000},
 			{"partition-table@0", 0x230000, 0x02000},
-			{"os-image@0", 0x240000, 0x300000},
-			{"file-system@0", 0x540000, 0x790000},
+			{"os-image@0", 0x240000, 0x500000},
+			{"file-system@0", 0x740000, 0x790000},
 			{"soft-version@0", 0xcd0000, 0x10000},
 			{"profile@0", 0xce0000, 0x10000},
 			{"default-config@0", 0xcf0000, 0x10000},
@@ -1545,8 +1545,8 @@ static struct device_info boards[] = {
 			{NULL, 0, 0}
 		},
 
-		.first_sysupgrade_partition = "os-image@1",
-		.last_sysupgrade_partition = "file-system@1"
+		.first_sysupgrade_partition = "os-image@0",
+		.last_sysupgrade_partition = "file-system@0"
 	},
 
 
